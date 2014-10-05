@@ -37,7 +37,7 @@ public class CheckBrokenLinks {
 
        public static boolean isLink(String link){
           //Change the Link container based on what URL you are looking for//
-           return link.contains("http://") && !link.contains("mailto");
+           return link.contains("http://") && !link.contains("mailto") && !link.contains("[URL]");
        }
 
         public static void verifyLinkActive(String linkUrl){
